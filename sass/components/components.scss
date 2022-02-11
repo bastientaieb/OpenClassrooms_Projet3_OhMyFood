@@ -5,24 +5,49 @@
     @include utils.h2;
   }
   .steps {
+    counter-reset: tuto;
     & ol {
       display: flex;
       flex-wrap: wrap;
       gap: 25px;
       padding-inline-start: 15px;
-      @media (max-width: 767px) {
+      @media (max-width: 901px) {
         flex-direction: column;
       }
     }
     & li {
+      position: relative;
+      @include utils.font-principal;
+      font-weight: 500;
+      &::before {
+        content: "" counter(tuto);
+        counter-increment: tuto;
+        color: white;
+        background-color: utils.$purpleCG;
+        height: 25px;
+        width: 25px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 15px;
+        left: -12px;
+      }
+      list-style-type: none;
       background-color: #f6f6f6;
-      padding: 1rem 2rem;
-      border: solid 1px red;
+      padding: 20px 25px;
       flex-grow: 1;
       border-radius: 15px;
       @include utils.shadow-basic;
       &:hover {
         @include utils.zoom-main-button;
+      }
+      & i.fas {
+        margin-right: 15px;
+        margin-left: 10px;
+      }
+      & i.fa-store {
+        color: utils.$purpleCG;
       }
     }
   }
