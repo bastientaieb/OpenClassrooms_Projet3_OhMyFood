@@ -1,0 +1,35 @@
+/* Couleurs principales */
+$purpleCG: #9356dc;
+$pinkCG: #ff79da;
+$vertCG: #99e2d0;
+/* CG pour Charte Graphique */
+
+/* Nuances des couleurs principales*/
+$grey: #e2e3e5;
+$light-grey: lighten($grey, 6%);
+$light-purple: lighten($purpleCG, 3%);
+$light-pink: lighten($pinkCG, 3%);
+
+/* Mixin Font */
+@mixin font-title {
+  font-family: "Shrikhand", cursive;
+}
+@mixin font-principal {
+  font-family: "Roboto", sans-serif;
+}
+@mixin h2 {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+/* Mixin dégradés button */
+@mixin gradient-button {
+  background: linear-gradient($pinkCG, $purpleCG);
+}
+@mixin gradient-light-scale {
+  background: linear-gradient($light-pink, $light-purple);
+  transform: scale(1.01);
+}
+@mixin shadow-basic {
+  box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+}

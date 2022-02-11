@@ -1,0 +1,69 @@
+@import "../utils/utils.scss";
+header {
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin: 12px 0px 12px 0px;
+}
+.city-search {
+  display: flex;
+  width: 100%;
+  background-color: $grey;
+  box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+  padding: 12px 5px;
+  justify-content: center;
+
+  form {
+    .input-city {
+      text-align: center;
+      background-color: $grey;
+      border: none;
+      @include font-principal;
+      font-weight: 500;
+    }
+    ::placeholder {
+      color: black;
+      opacity: 0.8;
+    }
+  }
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-grey;
+  h2 {
+    @include h2;
+    flex-wrap: wrap;
+    @include font-principal;
+    margin: 20px 80px;
+    text-align: center;
+  }
+  p {
+    margin: 0px 30px 25px 30px;
+    @include font-principal;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+  }
+  button {
+    @include font-principal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 14px 27px;
+    border-radius: 20px;
+    @include shadow-basic;
+    @include gradient-button;
+    margin-bottom: 50px;
+    transition: transform 200ms;
+    &:hover {
+      @include gradient-light-scale;
+    }
+  }
+}

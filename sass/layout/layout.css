@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Couleurs principales */
+/* CG pour Charte Graphique */
+/* Nuances des couleurs principales*/
+/* Mixin Font */
+/* Mixin dégradés button */
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin: 12px 0px 12px 0px;
+}
+
+.city-search {
+  display: flex;
+  width: 100%;
+  background-color: #e2e3e5;
+  box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+  padding: 12px 5px;
+  justify-content: center;
+}
+.city-search form .input-city {
+  text-align: center;
+  background-color: #e2e3e5;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.city-search form ::-moz-placeholder {
+  color: black;
+  opacity: 0.8;
+}
+.city-search form :-ms-input-placeholder {
+  color: black;
+  opacity: 0.8;
+}
+.city-search form ::placeholder {
+  color: black;
+  opacity: 0.8;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f3f3;
+}
+.heading h2 {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 80px;
+  text-align: center;
+}
+.heading p {
+  margin: 0px 30px 25px 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+}
+.heading button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 14px 27px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+  background: linear-gradient(#ff79da, #9356dc);
+  margin-bottom: 50px;
+  transition: transform 200ms;
+}
+.heading button:hover {
+  background: linear-gradient(#ff88de, #9b63df);
+  transform: scale(1.01);
+}/*# sourceMappingURL=layout.css.map */

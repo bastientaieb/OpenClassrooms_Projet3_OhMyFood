@@ -1,0 +1,26 @@
+@import "../utils/utils.scss";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+main {
+  padding: 0px 25px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  @include font-title;
+  text-align: center;
+  margin: 12px 0px 12px 0px;
+}

@@ -1,0 +1,19 @@
+@import "../utils/utils.scss";
+.reservation-step {
+  h2 {
+    @include h2;
+  }
+  .steps {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    li {
+      background-color: #f6f6f6;
+      padding: 15px 20px;
+      @include shadow-basic;
+      flex-grow: 1;
+    }
+  }
+}
