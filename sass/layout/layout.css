@@ -4,6 +4,7 @@
 /* Nuances des couleurs principales*/
 /* Mixin Font */
 /* Mixin dégradés button */
+/* Mixin zoom button */
 header {
   display: flex;
   flex-direction: column;

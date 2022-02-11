@@ -33,3 +33,7 @@ $light-pink: lighten($pinkCG, 3%);
 @mixin shadow-basic {
   box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
 }
+/* Mixin zoom button */
+@mixin zoom-main-button {
+  transform: scale(1.02);
+}

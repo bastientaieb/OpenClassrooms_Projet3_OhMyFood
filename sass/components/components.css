@@ -4,23 +4,35 @@
 /* Nuances des couleurs principales*/
 /* Mixin Font */
 /* Mixin dégradés button */
+/* Mixin zoom button */
+.reservation-step {
+  padding: 0px 25px;
+}
 .reservation-step h2 {
   font-weight: 500;
   font-size: 25px;
   font-family: "Roboto", sans-serif;
 }
-.reservation-step .steps {
+.reservation-step .steps ol {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  -webkit-padding-start: 15px;
+  padding-inline-start: 15px;
 }
 @media (max-width: 767px) {
-  .reservation-step .steps {
+  .reservation-step .steps ol {
     flex-direction: column;
   }
 }
 .reservation-step .steps li {
   background-color: #f6f6f6;
-  padding: 15px 20px;
-  box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+  padding: 1rem 2rem;
+  border: solid 1px red;
   flex-grow: 1;
+  border-radius: 15px;
+  box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+}
+.reservation-step .steps li:hover {
+  transform: scale(1.02);
 } /*# sourceMappingURL=components.css.map */

@@ -1,11 +1,12 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 /* Couleurs principales */
 /* CG pour Charte Graphique */
 /* Nuances des couleurs principales*/
 /* Mixin Font */
 /* Mixin dégradés button */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* Mixin zoom button */
 *,
 ::before,
 ::after {
@@ -16,10 +17,6 @@
 
 body {
   margin: 0px;
-}
-
-main {
-  padding: 0px 25px;
 }
 
 header {

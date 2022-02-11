@@ -1,19 +1,29 @@
-@import "../utils/utils.scss";
+@use "../utils/utils.scss";
 .reservation-step {
+  padding: 0px 25px;
   h2 {
-    @include h2;
+    @include utils.h2;
   }
   .steps {
-    display: flex;
-    align-items: center;
-    @media (max-width: 767px) {
-      flex-direction: column;
+    & ol {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding-inline-start: 15px;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
     }
-    li {
+    & li {
       background-color: #f6f6f6;
-      padding: 15px 20px;
-      @include shadow-basic;
+      padding: 1rem 2rem;
+      border: solid 1px red;
       flex-grow: 1;
+      border-radius: 15px;
+      @include utils.shadow-basic;
+      &:hover {
+        @include utils.zoom-main-button;
+      }
     }
   }
 }

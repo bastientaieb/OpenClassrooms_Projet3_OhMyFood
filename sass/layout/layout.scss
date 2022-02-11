@@ -1,4 +1,4 @@
-@import "../utils/utils.scss";
+@use "../utils/utils.scss";
 header {
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ header {
 .city-search {
   display: flex;
   width: 100%;
-  background-color: $grey;
+  background-color: utils.$grey;
   box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
   padding: 12px 5px;
   justify-content: center;
@@ -19,9 +19,9 @@ header {
   form {
     .input-city {
       text-align: center;
-      background-color: $grey;
+      background-color: utils.$grey;
       border: none;
-      @include font-principal;
+      @include utils.font-principal;
       font-weight: 500;
     }
     ::placeholder {
@@ -35,35 +35,35 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $light-grey;
+  background-color: utils.$light-grey;
   h2 {
-    @include h2;
+    @include utils.h2;
     flex-wrap: wrap;
-    @include font-principal;
+    @include utils.font-principal;
     margin: 20px 80px;
     text-align: center;
   }
   p {
     margin: 0px 30px 25px 30px;
-    @include font-principal;
+    @include utils.font-principal;
     font-weight: 200;
     font-size: 18px;
     text-align: center;
   }
   button {
-    @include font-principal;
+    @include utils.font-principal;
     font-weight: 400;
     font-size: 16px;
     color: white;
     border: none;
     padding: 14px 27px;
     border-radius: 20px;
-    @include shadow-basic;
-    @include gradient-button;
+    @include utils.shadow-basic;
+    @include utils.gradient-button;
     margin-bottom: 50px;
     transition: transform 200ms;
     &:hover {
-      @include gradient-light-scale;
+      @include utils.gradient-light-scale;
     }
   }
 }
