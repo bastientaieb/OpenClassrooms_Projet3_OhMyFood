@@ -52,7 +52,7 @@ header {
   flex-wrap: wrap;
   gap: 25px;
   -webkit-padding-start: 15px;
-  padding-inline-start: 15px;
+          padding-inline-start: 15px;
 }
 @media (max-width: 901px) {
   .reservation-step .steps ol {
@@ -66,9 +66,9 @@ header {
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 20px 25px;
-  flex-grow: 1;
   border-radius: 15px;
   box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+  flex-grow: 1;
 }
 .reservation-step .steps li::before {
   content: "" counter(tuto);
@@ -81,7 +81,7 @@ header {
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 15px;
+  bottom: 16.5px;
   left: -12px;
 }
 .reservation-step .steps li:hover {
@@ -181,9 +181,44 @@ header {
   transform: scale(1.01);
 }
 
+.menu {
+  background-color: #f2f3f3;
+  padding: 0px 25px;
+}
+.menu h2 {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 40px;
+}
+.menu .menu__restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu .menu__restaurants .menu__cards {
+  flex-grow: 1;
+  height: 150px;
+  border-radius: 15px;
+  background-size: cover;
+  background-size: 100%;
+}
+.menu .menu__restaurants .rest-1 {
+  background-image: url(../../Images/menu_palette_du_gout.jpg);
+}
+.menu .menu__restaurants .rest-2 {
+  background-image: url(../../Images/menu_note_enchantée.jpg);
+}
+.menu .menu__restaurants .rest-3 {
+  background-image: url(../../Images/menu_a_la_francaise.jpg);
+}
+.menu .menu__restaurants .rest-4 {
+  background-image: url(../../Images/menu_le_délice_des_sens.jpg);
+}
+
 /* Couleurs principales */
 /* CG pour Charte Graphique */
 /* Nuances des couleurs principales*/
 /* Mixin Font */
 /* Mixin dégradés button */
-/* Mixin zoom button */ /*# sourceMappingURL=style.css.map */
+/* Mixin zoom button *//*# sourceMappingURL=style.css.map */

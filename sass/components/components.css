@@ -35,9 +35,9 @@
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 20px 25px;
-  flex-grow: 1;
   border-radius: 15px;
   box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+  flex-grow: 1;
 }
 .reservation-step .steps li::before {
   content: "" counter(tuto);
@@ -50,7 +50,7 @@
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 15px;
+  bottom: 16.5px;
   left: -12px;
 }
 .reservation-step .steps li:hover {

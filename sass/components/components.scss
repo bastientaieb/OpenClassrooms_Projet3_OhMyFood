@@ -19,6 +19,12 @@
       position: relative;
       @include utils.font-principal;
       font-weight: 500;
+      list-style-type: none;
+      background-color: #f6f6f6;
+      padding: 20px 25px;
+      border-radius: 15px;
+      @include utils.shadow-basic;
+      flex-grow: 1;
       &::before {
         content: "" counter(tuto);
         counter-increment: tuto;
@@ -30,15 +36,9 @@
         place-items: center;
         border-radius: 50%;
         position: absolute;
-        bottom: 15px;
+        bottom: 16.5px;
         left: -12px;
       }
-      list-style-type: none;
-      background-color: #f6f6f6;
-      padding: 20px 25px;
-      flex-grow: 1;
-      border-radius: 15px;
-      @include utils.shadow-basic;
       &:hover {
         @include utils.zoom-main-button;
       }

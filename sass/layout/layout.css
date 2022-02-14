@@ -83,4 +83,44 @@ header {
 .heading button:hover {
   background: linear-gradient(#ff88de, #9b63df);
   transform: scale(1.01);
+}
+
+.menu {
+  background-color: #f2f3f3;
+  padding: 0px 25px;
+}
+.menu h2 {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 40px;
+}
+.menu .menu__restaurants {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+@media (max-width: 767px) {
+  .menu .menu__restaurants {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menu .menu__restaurants .menu__cards {
+  flex-grow: 1;
+  height: 150px;
+  border-radius: 15px;
+  background-size: cover;
+  background-size: 100%;
+}
+.menu .menu__restaurants .rest-1 {
+  background-image: url(../../Images/menu_palette_du_gout.jpg);
+}
+.menu .menu__restaurants .rest-2 {
+  background-image: url(../../Images/menu_note_enchantée.jpg);
+}
+.menu .menu__restaurants .rest-3 {
+  background-image: url(../../Images/menu_a_la_francaise.jpg);
+}
+.menu .menu__restaurants .rest-4 {
+  background-image: url(../../Images/menu_le_délice_des_sens.jpg);
 }/*# sourceMappingURL=layout.css.map */
