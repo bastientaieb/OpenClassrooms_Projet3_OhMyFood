@@ -183,7 +183,7 @@ header {
 
 .menu {
   background-color: #f2f3f3;
-  padding: 0px 25px;
+  padding: 0px 25px 60px 25px;
 }
 .menu h2 {
   font-weight: 500;
@@ -192,20 +192,60 @@ header {
   padding-top: 40px;
 }
 .menu .menu__restaurants {
-  display: flex;
-  /*grid-template-columns: repeat(2, 1fr);*/
-  /*gap: 25px;*/
-  /*@media (max-width: 767px) {
-    grid-template-columns: repeat(1, 1fr);*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
-.menu .menu__card {
-  height: 150px;
-  border-radius: 15px;
-  background-size: cover;
-  width: 50%;
+@media (max-width: 767px) {
+  .menu .menu__restaurants {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-.menu .menu__card figure img {
+.menu .menu__restaurants .menu__card {
+  width: 85%;
+}
+.menu .menu__restaurants .menu__card figure {
   width: 100%;
+  border-radius: 20px;
+  background-color: white;
+}
+.menu .menu__restaurants .menu__card .new {
+  position: relative;
+}
+.menu .menu__restaurants .menu__card .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 35px;
+  width: 80px;
+  background-color: #99e2d0;
+  display: grid;
+  place-items: center;
+  top: 15px;
+  right: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #278870;
+}
+.menu .menu__restaurants .menu__card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.menu .menu__restaurants .menu__card figcaption {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu__restaurants .menu__card figcaption p {
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  font-weight: 200;
+  line-height: 150%;
+}
+.menu .menu__restaurants .menu__card figcaption .fa-heart {
+  font-size: 25px;
+  margin: 18px;
 }
 
 /* Couleurs principales */
