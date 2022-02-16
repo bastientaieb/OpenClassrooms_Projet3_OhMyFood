@@ -25,6 +25,10 @@
       border-radius: 15px;
       @include utils.shadow-basic;
       flex-grow: 1;
+      &:hover {
+        box-shadow: 1px 4px 6px 0px rgba(50, 50, 50, 0.3);
+        background-color: lighten($color: #f6f6f6, $amount: 1%);
+      }
       &::before {
         content: "" counter(tuto);
         counter-increment: tuto;
