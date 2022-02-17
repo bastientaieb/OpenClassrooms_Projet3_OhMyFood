@@ -60,3 +60,19 @@ $light-pink: lighten($pinkCG, 3%);
   cursor: pointer;
   opacity: 1;
 }
+/* Keyframes animation */
+@mixin spin-animation {
+  @keyframes spin {
+    0% {
+      transform: rotate(-300deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+}
+@mixin text-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
