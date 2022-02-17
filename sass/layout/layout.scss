@@ -137,6 +137,7 @@
           @include utils.heart-positionnement;
           transform: translateY(-40px);
           top: 50%;
+          font-size: 25px;
         }
         .fas {
           @include utils.empty-heart;

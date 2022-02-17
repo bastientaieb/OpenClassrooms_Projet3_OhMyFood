@@ -6,6 +6,7 @@ $footer-color: #353535;
 /* CG pour Charte Graphique */
 
 /* Nuances des couleurs principales*/
+$middle-grey: #f6f6f6;
 $grey: #e2e3e5;
 $light-grey: lighten($grey, 6%);
 $light-purple: lighten($purpleCG, 3%);
@@ -34,6 +35,9 @@ $light-pink: lighten($pinkCG, 3%);
 @mixin shadow-basic {
   box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
 }
+@mixin shadow-meal {
+  box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.1);
+}
 /* Mixin zoom button */
 @mixin zoom-main-button {
   transform: scale(1.02);
@@ -42,7 +46,6 @@ $light-pink: lighten($pinkCG, 3%);
 @mixin heart-positionnement {
   position: absolute;
   right: 0px;
-  font-size: 25px;
   margin: 18px;
 }
 @mixin empty-heart {
