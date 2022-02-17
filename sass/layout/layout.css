@@ -5,7 +5,8 @@
 /* Mixin Font */
 /* Mixin dégradés button */
 /* Mixin zoom button */
-header {
+/* Mixin Heart */
+.header-main {
   display: flex;
   flex-direction: column;
 }
@@ -105,6 +106,10 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.menu .menu__restaurants a {
+  text-decoration: none;
+  color: black;
+}
 .menu .menu__restaurants .menu__card {
   width: 100%;
   transform: translateX(-38px);
@@ -155,10 +160,10 @@ header {
 .menu .menu__restaurants .menu__card figcaption .fa-heart {
   position: absolute;
   right: 0px;
-  top: 50%;
-  transform: translateY(-40px);
   font-size: 25px;
   margin: 18px;
+  transform: translateY(-40px);
+  top: 50%;
 }
 .menu .menu__restaurants .menu__card figcaption .fas {
   color: transparent;
@@ -171,6 +176,7 @@ header {
 .menu .menu__restaurants .menu__card figcaption .fas:hover {
   cursor: pointer;
   opacity: 1;
+  transform: translateY(-40px) scale(1.1);
 }
 
 footer {

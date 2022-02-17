@@ -38,3 +38,22 @@ $light-pink: lighten($pinkCG, 3%);
 @mixin zoom-main-button {
   transform: scale(1.02);
 }
+/* Mixin Heart */
+@mixin heart-positionnement {
+  position: absolute;
+  right: 0px;
+  font-size: 25px;
+  margin: 18px;
+}
+@mixin empty-heart {
+  color: transparent;
+  background-image: linear-gradient($pinkCG, $purpleCG);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+@mixin full-heart {
+  cursor: pointer;
+  opacity: 1;
+}

@@ -7,6 +7,7 @@
 /* Mixin Font */
 /* Mixin dégradés button */
 /* Mixin zoom button */
+/* Mixin Heart */
 *,
 ::before,
 ::after {
@@ -17,11 +18,6 @@
 
 body {
   margin: 0px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
 }
 
 #logo {
