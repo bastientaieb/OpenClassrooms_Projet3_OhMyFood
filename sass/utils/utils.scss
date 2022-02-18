@@ -25,6 +25,23 @@ $light-pink: lighten($pinkCG, 3%);
   font-family: "Roboto", sans-serif;
 }
 /* Mixin dégradés button */
+@mixin button-website {
+  @include font-principal;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 14px 27px;
+  border-radius: 20px;
+  @include shadow-basic;
+  @include gradient-button;
+  margin-bottom: 50px;
+  transition: transform 200ms;
+  &:hover {
+    @include gradient-light-scale;
+    cursor: pointer;
+  }
+}
 @mixin gradient-button {
   background: linear-gradient($pinkCG, $purpleCG);
 }
@@ -75,4 +92,19 @@ $light-pink: lighten($pinkCG, 3%);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+@mixin meal-appear {
+  @keyframes appear {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
 }

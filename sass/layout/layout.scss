@@ -53,20 +53,7 @@
     text-align: center;
   }
   button {
-    @include utils.font-principal;
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-    border: none;
-    padding: 14px 27px;
-    border-radius: 20px;
-    @include utils.shadow-basic;
-    @include utils.gradient-button;
-    margin-bottom: 50px;
-    transition: transform 200ms;
-    &:hover {
-      @include utils.gradient-light-scale;
-    }
+    @include utils.button-website;
   }
 }
 // Menus des restautants
@@ -150,6 +137,7 @@
     }
   }
 }
+
 footer {
   background-color: utils.$footer-color;
   padding-bottom: 50px;

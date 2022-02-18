@@ -11,6 +11,9 @@
   display: flex;
   align-items: center;
 }
+.header-resto a:visited {
+  color: black;
+}
 .header-resto h1 {
   font-family: "Shrikhand", cursive;
   margin: 15px auto;
@@ -20,6 +23,10 @@
   font-size: 20px;
   position: absolute;
   left: 20px;
+  transform: translateY(-8px);
+}
+.header-resto .fa-arrow-left:hover {
+  cursor: pointer;
 }
 
 img {
@@ -84,7 +91,25 @@ img {
 .cartes .cartes__menus article {
   overflow: hidden;
 }
+.cartes .cartes__menus article h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  margin-left: 5px;
+  position: relative;
+}
+.cartes .cartes__menus article h3::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  height: 3px;
+  width: 45px;
+  background-color: #99e2d0;
+}
 .cartes .cartes__menus article .menus__meal {
+  -webkit-animation: appear 1s ease-in-out both;
+          animation: appear 1s ease-in-out both;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -95,6 +120,44 @@ img {
   overflow: hidden;
   font-family: "Roboto", sans-serif;
   box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.1);
+}
+.cartes .cartes__menus article .menus__meal:nth-child(1) {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+.cartes .cartes__menus article .menus__meal:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.cartes .cartes__menus article .menus__meal:nth-child(3) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+.cartes .cartes__menus article .menus__meal:nth-child(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .cartes .cartes__menus article .menus__meal:hover {
   cursor: pointer;
@@ -168,4 +231,29 @@ img {
   .cartes .cartes__menus {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.meal-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.meal-order .button-order {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 14px 27px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 4px 0px rgba(50, 50, 50, 0.3);
+  background: linear-gradient(#ff79da, #9356dc);
+  margin-bottom: 50px;
+  transition: transform 200ms;
+}
+.meal-order .button-order:hover {
+  background: linear-gradient(#ff88de, #9b63df);
+  transform: scale(1.01);
+  cursor: pointer;
 }/*# sourceMappingURL=pages.css.map */
