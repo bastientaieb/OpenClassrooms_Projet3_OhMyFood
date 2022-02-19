@@ -139,23 +139,27 @@ img {
 }
 @-webkit-keyframes appear {
   0% {
+    transform: translateY(50%);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
+    transform: translateY(0%);
     opacity: 1;
   }
 }
 @keyframes appear {
   0% {
+    transform: translateY(50%);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
+    transform: translateY(0%);
     opacity: 1;
   }
 }
