@@ -541,6 +541,7 @@ img {
 }
 .cartes .cartes__menus article .menus__meal .meal-description {
   overflow: hidden;
+  padding-left: 20px;
 }
 .cartes .cartes__menus article .menus__meal .meal-description h4 {
   margin: 12px 0px 0px 12px;
