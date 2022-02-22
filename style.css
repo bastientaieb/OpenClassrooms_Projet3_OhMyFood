@@ -432,6 +432,11 @@ img {
   padding: 25px 30px;
   font-size: 28px;
 }
+@media (max-width: 380px) {
+  .cartes h2 {
+    font-size: 20px;
+  }
+}
 .cartes .fa-heart {
   position: absolute;
   right: 0px;

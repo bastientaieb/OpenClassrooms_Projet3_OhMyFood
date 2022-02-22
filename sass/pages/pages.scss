@@ -43,6 +43,9 @@ img {
     margin: 0px;
     padding: 25px 30px;
     font-size: 28px;
+    @media (max-width: 380px) {
+      font-size: 20px;
+    }
   }
   .fa-heart {
     @include utils.heart-positionnement;
@@ -51,6 +54,7 @@ img {
     padding-right: 25px;
     font-size: 28px;
   }
+
   .empty_heart {
     @include utils.empty-heart;
     &:hover {
