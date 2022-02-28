@@ -121,15 +121,15 @@
           padding-bottom: 12px;
         }
         .fa-heart {
-          @include utils.heart-positionnement;
+          @include utils.heart-shared;
           transform: translateY(-40px);
           top: 50%;
           font-size: 25px;
         }
         .fas {
-          @include utils.empty-heart;
+          @include utils.full-heart;
           &:hover {
-            @include utils.full-heart;
+            @include utils.heart-hover;
             transform: translateY(-40px) scale(1.1);
           }
         }

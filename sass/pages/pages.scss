@@ -48,7 +48,7 @@ img {
     }
   }
   .fa-heart {
-    @include utils.heart-positionnement;
+    @include utils.heart-shared;
     transform: translateY(10px);
     top: 0px;
     padding-right: 25px;
@@ -56,9 +56,9 @@ img {
   }
 
   .empty_heart {
-    @include utils.empty-heart;
+    @include utils.full-heart;
     &:hover {
-      @include utils.full-heart;
+      @include utils.heart-hover;
       transform: translateY(10px) scale(1.01);
     }
   }

@@ -262,21 +262,26 @@ body {
   position: absolute;
   right: 0px;
   margin: 18px;
+  transform: scale(-1);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   transform: translateY(-40px);
   top: 50%;
   font-size: 25px;
+  transform-origin: bottom;
 }
 .menu .menu__restaurants .menu__card figcaption .fas {
   color: transparent;
-  background-image: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .menu .menu__restaurants .menu__card figcaption .fas:hover {
-  cursor: pointer;
-  opacity: 1;
+  background: linear-gradient(to bottom left, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   transform: translateY(-40px) scale(1.1);
 }
 
@@ -441,6 +446,12 @@ img {
   position: absolute;
   right: 0px;
   margin: 18px;
+  transform: scale(-1);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   transform: translateY(10px);
   top: 0px;
   padding-right: 25px;
@@ -448,15 +459,13 @@ img {
 }
 .cartes .empty_heart {
   color: transparent;
-  background-image: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .cartes .empty_heart:hover {
-  cursor: pointer;
-  opacity: 1;
+  background: linear-gradient(to bottom left, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   transform: translateY(10px) scale(1.01);
 }
 
