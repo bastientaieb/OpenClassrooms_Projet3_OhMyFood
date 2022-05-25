@@ -4,6 +4,7 @@ Création d'un site internet mobile first pour une entreprise de livraison de pl
 Le site internet comprend 4 pages, une page d'accueil qui redirige vers les pages personnelles des 3 restaurants.
 
 Mise en pratique de HTML, CSS, Sass avec travail sur les animations / transitions. 
+- Code valide W3C.
 
 Compétences améliorées : 
 - Découpage d'une maquette. 
